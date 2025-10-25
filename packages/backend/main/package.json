@@ -1,0 +1,52 @@
+{
+  "name": "backend_main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "tsx watch src/shared/infra/server.ts",
+    "build": "tsup src --out-dir build",
+    "start": "node build/shared/infra/server.js",
+    "typeorm": "tsx node_modules/typeorm/cli.js -d ./dataSource.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.11.0",
+  "dependencies": {
+    "@types/jsonwebtoken": "^9.0.10",
+    "axios": "^1.12.2",
+    "bcryptjs": "^3.0.2",
+    "date-fns": "^4.1.0",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.16.3",
+    "reflect-metadata": "^0.2.2",
+    "typeorm": "^0.3.27",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^10.1.0",
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.8.1",
+    "@typescript-eslint/eslint-plugin": "^8.46.2",
+    "@typescript-eslint/parser": "^8.46.2",
+    "@vitest/coverage-v8": "^4.0.3",
+    "eslint": "^9.38.0",
+    "eslint-config-airbnb-typescript": "^18.0.0",
+    "eslint-plugin-import": "^2.32.0",
+    "faker": "^6.6.6",
+    "tsup": "^8.5.0",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
+    "vite-tsconfig-paths": "^5.1.4",
+    "vitest": "^4.0.2"
+  }
+}

@@ -1,0 +1,26 @@
+class CreateOrderItemInputData {
+  public readonly orderId: number;
+
+  public readonly product: {
+    id: number;
+    price: number;
+    quantity: number;
+  };
+
+  constructor({
+    orderId,
+    product,
+  }: {
+    orderId: number;
+    product: {
+      id: number;
+      price: number;
+      quantity: number;
+    };
+  }) {
+    this.orderId = orderId;
+    this.product = product;
+  }
+}
+
+export default CreateOrderItemInputData;

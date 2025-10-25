@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {
+    "module": "NodeNext",
+    "target": "es2022",
+    "types": ["node"],
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+    "rootDir": "./src",
+    "outDir": "./build",
+    "baseUrl": "./src",
+    "moduleResolution": "nodenext",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "experimentalDecorators": true,
+    "paths": {
+      "@config/*": [
+        "config/*"
+      ],
+      "@modules/*": [
+        "modules/*"
+      ],
+      "@shared/*": [
+        "shared/*"
+      ]
+    },
+
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": false,
+
+    "strict": true,
+    "jsx": "react-jsx",
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+    "skipLibCheck": true,
+    "strictPropertyInitialization": false,    
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "build",
+    "node_modules",
+    "**/*.example.ts"
+  ]
+}

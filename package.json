@@ -1,0 +1,21 @@
+{
+  "name": "prova",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint packages/**/*.ts --report-unused-disable-directives --max-warnings 0",
+    "lint:fix": "eslint packages/**/*.ts --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.11.0",
+  "devDependencies": {
+    "@rocketseat/eslint-config": "^2.2.2",
+    "eslint": "^9.38.0",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "globals": "^16.4.0",
+    "typescript-eslint": "^8.46.2"
+  }
+}
