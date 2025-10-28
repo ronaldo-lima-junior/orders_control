@@ -1,4 +1,4 @@
-# Backend API - Prova Plano de Carreira
+# API para controle de PEDIDOS
 
 Este é o backend da aplicação, responsável pela gestão de usuários, produtos, pedidos e integração com o sistema de pagamento Asaas.
 
